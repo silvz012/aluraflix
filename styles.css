@@ -1,0 +1,103 @@
+body {
+    color: white;
+    background: rgb(28, 20, 14);
+    margin: 0px;
+    font-family: "Ubuntu", sans-serif;
+    margin-bottom: 100px;
+}
+
+header {
+    border-bottom: solid 5px rgb(197, 104, 50);
+    padding: 20px;
+    font-size: 32px;
+    color: rgb(197, 104, 50);
+}
+
+.chamada {
+    background: rgb(233, 175, 102);
+    padding-bottom: 80px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    border-bottom: solid 5px rgb(197, 104, 50);
+}
+
+.chamada-texto {
+    margin-right: 5%;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.categoria {
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 50px;
+}
+
+.categoria-videos {
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: none; /* Esconde a barra de rolagem no Firefox */
+    scroll-behavior: smooth; /* Rolagem suave */
+    gap: 10px;
+}
+
+/* Esconde a barra de rolagem no Chrome, Safari e Edge */
+.categoria-videos::-webkit-scrollbar {
+    display: none;
+}
+
+/* Estilos dos vídeos dentro da galeria */
+.video-item {
+    min-width: 300px; /* Ajuste a largura conforme necessário */
+    background-color: #eee;
+    height: 200px; /* Altura dos vídeos, ajuste conforme necessário */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.categoria-videos img {
+    opacity: 0.5;
+    height: 200px;
+}
+
+.categoria-videos img:hover {
+    opacity: 1.0;
+    border: 5px solid rgb(197, 104, 50);
+}
+
+.categoria h2 {
+    color: rgb(197, 104, 50);
+}
+
+/* Estilo dos botões de navegação */
+.nav-button {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 24px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+/* Posicionamento dos botões de navegação */
+.nav-button.left {
+    left: 10px; /* Ajuste a posição horizontal conforme necessário */
+}
+
+.nav-button.right {
+    right: 10px; /* Ajuste a posição horizontal conforme necessário */
+}
